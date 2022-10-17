@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <article class="card">
+      <div class="info">
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="stats">
+          <span class="stat stat--1">10k+</span>
+          <span class="stat stat--2">314</span>
+          <span class="stat stat--3">12m+</span>
+          <span class="stat--1_el"> companies</span>
+          <span class="stat--2_el"> templates</span>
+          <span class="stat--3_el"> queries</span>
+        </div>
+      </div>
+      <picture class="card-img">
+        <source
+          media="(min-width: 616px)"
+          srcset="images/image-header-desktop.jpg"
+        />
+        <img
+          src="images/image-header-mobile.jpg"
+          alt="Photo of organization team"
+          width="432"
+          height="332"
+          class="card-img"
+        />
+      </picture>
+    </article>
+  </body>
+</html>

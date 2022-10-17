@@ -1,0 +1,130 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #090b1a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+.card {
+  display: grid;
+  background-color: #1b1938;
+  border-radius: 8px;
+}
+@media (min-width: 501px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 100px auto;
+    width: 864px;
+  }
+
+  .info {
+    padding: 32px 48px;
+  }
+  .info h1 {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+  .info p {
+    margin-bottom: 44px;
+  }
+  .stats {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+  .card-img {
+    grid-row: 1;
+    grid-column: 2;
+    border-radius: 0 8px 8px 0;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    margin: 24px 16px;
+    text-align: center;
+  }
+  .info {
+    padding: 24px 32px;
+    grid-row: 2/3;
+  }
+  .info h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .info p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .card-img {
+    grid-row: 1/2;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat--1 {
+    order: 1;
+  }
+  .stat--1_el {
+    order: 2;
+  }
+  .stat--2 {
+    order: 3;
+  }
+  .stat--2_el {
+    order: 4;
+  }
+  .stat--3 {
+    order: 5;
+  }
+  .stat--3_el {
+    order: 6;
+  }
+  .stat--1_el,
+  .stat--2_el,
+  .stat--3_el {
+    margin-bottom: 24px;
+  }
+}
+
+.card-img {
+  background-color: #682294;
+  overflow: hidden;
+}
+img {
+  object-fit: cover;
+  opacity: 0.3;
+}
+.info h1 span {
+  color: #aa5cdb;
+}
+.info p {
+  color: #ffffffbf;
+  line-height: 1.5;
+}
+.stats {
+  color: #ffffff99;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.stat {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
