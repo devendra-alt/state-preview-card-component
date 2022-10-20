@@ -14,6 +14,9 @@ body {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 .card {
   display: grid;
@@ -63,11 +66,11 @@ body {
   }
   .info h1 {
     font-size: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
   .info p {
     font-size: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
   .card-img {
     grid-row: 1/2;
@@ -122,6 +125,7 @@ img {
   color: #ffffff99;
   text-transform: uppercase;
   font-size: 14px;
+  list-style: none;
 }
 .stat {
   color: #fff;
